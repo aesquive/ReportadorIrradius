@@ -1,0 +1,76 @@
+<f:view xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:f="http://java.sun.com/jsf/core"
+        xmlns:h="http://java.sun.com/jsf/html"
+        xmlns:ui="http://java.sun.com/jsf/facelets"
+        xmlns:p="http://primefaces.org/ui"
+        xmlns:pm="http://primefaces.org/mobile"
+        contentType="text/html">
+
+                <h:body >
+                <center>
+                    <h:form>
+                        <h:panelGrid columns="1">            
+                            
+                            <h:panelGrid columns="2">
+                                <h:column id="columna1">
+                                    <center>
+                                <h:outputText  value="Informe de Resultados" style="font-weight: bold;" />
+                                </center>
+                                 <h:panelGrid columns="2">
+                                     <a href="#{accionesInformes.exelInformeResultados}">Formato Excel</a>
+                                     <a href="#{accionesInformes.pdfInformeResultados}">Formato PDF</a>
+                                 </h:panelGrid>
+                                </h:column>
+                                <h:column id="columna2">
+                                    <center>
+                                    <h:outputText value="Informe de de Caja" style="font-weight: bold;"/>
+                                    </center>
+                                    <h:panelGrid columns="2">
+                                        <a href="#{accionesInformes.exelInformeCaja}">Formato Excel</a>
+                                        <a href="#{accionesInformes.pdfInformeCaja}">Formato PDF</a>
+                                    </h:panelGrid>
+                                </h:column>
+                            </h:panelGrid>
+                            <br/>
+                            <br/>
+                             <h:panelGrid columns="2">
+                                <h:column id="columna1b">
+                                    <center>
+                                <h:outputText  value="Informe de Balance" style="font-weight: bold;" />
+                                    </center>
+                                 <h:panelGrid columns="2">
+                                     <a href="#{accionesInformes.exelInformeBalance}">Formato Excel</a>
+                                     <a href="#{accionesInformes.pdfInformeBalance}">Formato PDF</a>
+                                 </h:panelGrid>
+                                </h:column>
+                                <h:column id="columna2b">
+                                    <center>
+                                        <h:outputText value="Indicadores Clave   " style="font-weight: bold;"/>
+                                    </center>
+                                    <h:panelGrid columns="2">
+                                        <a href="#{accionesInformes.exelIndicadoresClave}">Formato Excel</a>
+                                        <a href="#{accionesInformes.pdfIndicadoresClave}">Formato PDF</a>
+                                    </h:panelGrid>
+                                </h:column>
+                            </h:panelGrid>
+                        </h:panelGrid>
+                        <br/>
+                        <br/>
+                        <h:panelGrid columns="1">
+                            <h:column>
+                            <center>
+                            <h:outputText value="Parametros" style="font-weight: bold;" />
+                            </center>
+                            <h:panelGrid columns="2">
+                                <a href="#{accionesInformes.exelParametros}">Formato Excel</a>
+                                <a href="#{accionesInformes.pdfParametros}">Formato PDF</a>
+                            </h:panelGrid>
+                            </h:column>
+                        </h:panelGrid>   
+                        <br/>
+                        <br/>
+
+                    </h:form>
+                </center>
+            </h:body>
+</f:view>
